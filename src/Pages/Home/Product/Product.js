@@ -16,7 +16,9 @@ const Product = ({ products }) => {
                     </Card.Text>
                     <br />
                     <h5>Supplier:</h5>
-                    <Button variant="primary">Update</Button>
+                    <Button
+                        className='text-light fw-bold'
+                        variant="info">Update</Button>
                 </Card.Body>
             </Card>
         </div>
