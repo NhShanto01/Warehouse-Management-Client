@@ -5,6 +5,7 @@ import SignUp from './Pages/Authentication/SignUp/SignUp';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Sheard/Footer/Footer';
 import Header from './Pages/Sheard/Header/Header';
+import NotFound from './Pages/Sheard/NotFound/NotFound';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
