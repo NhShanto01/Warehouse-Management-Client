@@ -16,14 +16,14 @@
 .footer {
     padding: 40px 0;
     background-color: #111;
-    font-family: monospace;
+    font-family: sans-serif;
     color: aliceblue;
 }
 
 .footer .social {
     text-align: center;
     padding-bottom: 25px;
-    color: #4b4c4d;
+    color: white;
 }
 
 .footer .social a {

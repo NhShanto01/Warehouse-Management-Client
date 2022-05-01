@@ -13,7 +13,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <SectionOne></SectionOne>
-            <h2>Inventory Products</h2>
+            <h2>Featured Products</h2>
             <div className='row container mx-auto'>
                 {
                     showProductItem.map(products => <Product

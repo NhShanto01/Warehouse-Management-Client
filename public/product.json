@@ -5,7 +5,7 @@
         "name": "Cricket Bat",
         "price": "$(90-150)",
         "quantity": "1300",
-        "about": "A cricket bat is a specialised piece of equipment used by batters in the sport of cricket to hit the ball, typically consisting of a cane handle attached to a flat-fronted willow-wood blade.\r\n"
+        "about": "A cricket bat is a specialised piece of equipment used by batters in the sport of cricket to hit the ball.\r\n"
     },
     {
         "_id": "02",
@@ -13,7 +13,7 @@
         "name": "Jursey",
         "price": "$(90-150)",
         "quantity": "2300",
-        "about": "Sports jerseys are the uniform that a team wears for a sports match. Every team has a different jersey than the other teams.It is designed specifically based on the team, the name of the team the city or country the team is representing.\r\n"
+        "about": "Sports jerseys are the uniform that a team wears for a sports match. Every team has a different jersey than the other teams.\r\n"
     },
     {
         "_id": "03",
@@ -21,7 +21,7 @@
         "name": "Badminton Racket",
         "price": "$(90-150)",
         "quantity": "820",
-        "about": "A Badminton Racket is a piece of sports equipment that has a handled frame with an open hoop with a network of strings stretched tightly.It is used to strike a shuttlecock in a Badminton match.\r\n"
+        "about": "A Badminton Racket is a piece of sports equipment that has a handled frame with an open hoop with a network of strings stretched tightly.\r\n"
     },
     {
         "_id": "04",
@@ -29,7 +29,7 @@
         "name": "Cricket Ball",
         "price": "$(90-150)",
         "quantity": "1200",
-        "about": "A cricket ball is made from layers of twine wound around a cork core, inside a red leather shell. A raised seam of six rows of stitching gives the ball a number of unique aerodynamic qualities, and helps determine its swing, cut and spin.\r\n"
+        "about": "A cricket ball is made from layers of twine wound around a cork core, inside a red leather shell.\r\n"
     },
     {
         "_id": "05",
@@ -37,7 +37,7 @@
         "name": "Football(Soccer ball)",
         "price": "$(90-150)",
         "quantity": "680",
-        "about": "The ball is round, covered with leather or some other suitable material, and inflated; it must be 27–27.5 inches (68–70 cm) in circumference and 14.5–16 ounces (410–450 grams) in weight.\r\n"
+        "about": "The ball is round, covered with leather or some other suitable material, and inflated.\r\n"
     },
     {
         "_id": "06",
@@ -45,7 +45,7 @@
         "name": "Basketball",
         "price": "$(90-150)",
         "quantity": "600",
-        "about": "Basketball is a game played between two teams of five players each on a rectangular court, usually indoors. Each team tries to score by tossing the ball through the opponent's goal, an elevated horizontal hoop and net called a basket.\r\n"
+        "about": "Basketball is a game played between two teams of five players each on a rectangular court, usually indoors.\r\n"
     },
     {
         "_id": "07",
@@ -53,7 +53,7 @@
         "name": "Volleyball",
         "price": "$(90-150)",
         "quantity": "550",
-        "about": "Volleyball is one of the game that most of us played during childhood with our friends, as you do not require a lot of equipment to play the game.  From playing it on the beach to the court- volleyball is a unique recreational and professional sport that people enjoy playing.\r\n"
+        "about": "Volleyball is one of the game that most of us played during childhood with our friends, as you do not require a lot of equipment to play the game.  \r\n"
     },
     {
         "_id": "08",
@@ -61,7 +61,7 @@
         "name": "Boxing Gloves",
         "price": "$(90-150)",
         "quantity": "470",
-        "about": "Boxing gloves are cushioned gloves that fighters wear on their hands during boxing matches and practices. Unlike 'fist-load weapons' (such as the ancient cestus) which were designed as a lethal weapon, modern boxing gloves are non-lethal, designed to protect both the opponent's head and the fighter's hand during a bout.\r\n"
+        "about": "Boxing gloves are cushioned gloves that fighters wear on their hands during boxing matches and practices.\r\n"
     },
     {
         "_id": "09",
@@ -77,7 +77,7 @@
         "name": "Football Truf",
         "price": "$(90-150)",
         "quantity": "520",
-        "about": "Artificial turf is a surface of synthetic fibers made to look like natural grass. It is most often used in arenas for sports that were originally or are normally played on grass. However, it is now being used on residential lawns and commercial applications as well.\r\n"
+        "about": "Artificial turf is a surface of synthetic fibers made to look like natural grass. It is most often used in arenas for sports that were originally or are normally played on grass.\r\n"
     },
     {
         "_id": "11",
@@ -85,7 +85,7 @@
         "name": "Football Gear bag",
         "price": "$(90-150)",
         "quantity": "740",
-        "about": "In association football, kit is the standard equipment and attire worn by players. The sport's rules specify the minimum kit which a player must use, and also prohibit the use of anything that is dangerous to either the player or another participant.\r\n"
+        "about": "In association football, kit is the standard equipment and attire worn by players. \r\n"
     },
     {
         "_id": "12",
@@ -93,7 +93,7 @@
         "name": "Sports Net",
         "price": "$(90-150)",
         "quantity": "600",
-        "about": "In tennis and other racquet sports such as badminton, sports net is use to separate the court into two distinct zones; offering a barrier over which players must hit the ball or shuttlecock\r\n"
+        "about": "In tennis and other racquet sports such as badminton, sports net is use to separate the court into two distinct zones.\r\n"
     },
     {
         "_id": "13",
@@ -109,7 +109,7 @@
         "name": "Pool Game(cue sports)",
         "price": "$(90-150)",
         "quantity": "320",
-        "about": "Cue sports also known as billiard sports,are a wide variety of games of skill generally played with a cue stick, which is used to strike billiard balls and thereby cause them to move around a cloth-covered billiards table bounded by elastic bumpers known as cushions.\r\n"
+        "about": "Cue sports also known as billiard sports,are a wide variety of games of skill generally played with a cue stick.\r\n"
     },
     {
         "_id": "15",
@@ -133,7 +133,7 @@
         "name": "Soccer cleats",
         "price": "$(90-150)",
         "quantity": "1720",
-        "about": "Soccer cleats allow players to grip the ground and move in agile ways while protecting their bodies, especially their feet, from injury. Soccer cleats provide both traction and friction for soccer players when they are making quick turns on the field and sprinting with the ball.\r\n"
+        "about": "Soccer cleats allow players to grip the ground and move in agile ways while protecting their bodies, especially their feet, from injury.\r\n"
     },
     {
         "_id": "18",
@@ -141,7 +141,7 @@
         "name": "Sports Shoe",
         "price": "$(90-150)",
         "quantity": "2200",
-        "about": "Athletic footwear is easy to forget that sport shoes were initially designed for a specific purpose-for functionality, comfort, and to maximize athletic performance. As diverse as traditional footwear itself, athletic shoes fall into the following categories: running/training/walking, field sports, winter sports, outdoor sports, track and field, and specialty shoes.\r\n"
+        "about": "Athletic footwear is easy to forget that sport shoes were initially designed for a specific purpose-for functionality, comfort, and to maximize athletic performance.\r\n"
     },
     {
         "_id": "19",
@@ -149,7 +149,7 @@
         "name": "Goalkeeper gloves",
         "price": "$(90-150)",
         "quantity": "620",
-        "about": "Goalkeeping gloves should be worn slightly larger than hand size. The gap between your fingers and the top of the glove should be no less than a ¼ inch, with ideal ½ inch being the ideal space. A gap of an inch or more is too much and can affect the way you play.\r\n"
+        "about": "Goalkeeping gloves should be worn slightly larger than hand size. The gap between your fingers and the top of the glove should be no less than a ¼ inch, with ideal ½ inch being the ideal space.\r\n"
     },
     {
         "_id": "20",
@@ -173,6 +173,6 @@
         "name": "Sports Tracksuit",
         "price": "$(90-150)",
         "quantity": "450",
-        "about": "A tracksuit is an article of clothing consisting of two parts: trousers and a jacket usually with front zipper. It was originally intended for use in sports, mainly for athletes to wear over competition clothing and to take off before competition.\r\n"
+        "about": "A tracksuit is an article of clothing consisting of two parts: trousers and a jacket usually with front zipper.\r\n"
     }
 ]

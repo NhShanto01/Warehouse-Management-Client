@@ -12,9 +12,8 @@ const Product = ({ products }) => {
                     <p>Price:{price}</p>
                     <p><b>Quantity:{quantity}</b> </p>
                     <Card.Text>
-                        Description:{about}
+                        <u>Description</u> : {about}
                     </Card.Text>
-                    <br />
                     <h5>Supplier:</h5>
                     <Button
                         className='text-light fw-bold'

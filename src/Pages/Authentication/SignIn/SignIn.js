@@ -81,7 +81,7 @@ const SignIn = () => {
                     <button className='btn btn-dark'>SignIn</button>
                 </Form>
                 {errorTextElement}
-                <p className='text-start'>New to Sports Zone ? <Link to="/register" className='pe-auto text-decoration-none' onClick={navigateToSignup}>Please Register</Link> </p>
+                <p className='text-start'>New to Sports Zone ? <Link to="/signup" className='pe-auto text-decoration-none' onClick={navigateToSignup}>Please Register</Link> </p>
 
 
                 <p className='text-start'>Forget Password? <button className='btn btn-link pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
