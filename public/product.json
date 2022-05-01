@@ -5,7 +5,8 @@
         "name": "Cricket Bat",
         "price": "$(90-150)",
         "quantity": "1300",
-        "about": "A cricket bat is a specialised piece of equipment used by batters in the sport of cricket to hit the ball.\r\n"
+        "about": "A cricket bat is a specialised piece of equipment used by batters in the sport of cricket to hit the ball.\r\n",
+        "supplier": "Moniruzzaman"
     },
     {
         "_id": "02",
@@ -13,7 +14,8 @@
         "name": "Jursey",
         "price": "$(90-150)",
         "quantity": "2300",
-        "about": "Sports jerseys are the uniform that a team wears for a sports match. Every team has a different jersey than the other teams.\r\n"
+        "about": "Sports jerseys are the uniform that a team wears for a sports match. Every team has a different jersey than the other teams.\r\n",
+        "supplier": "Sourav Arefin"
     },
     {
         "_id": "03",
@@ -21,7 +23,8 @@
         "name": "Badminton Racket",
         "price": "$(90-150)",
         "quantity": "820",
-        "about": "A Badminton Racket is a piece of sports equipment that has a handled frame with an open hoop with a network of strings stretched tightly.\r\n"
+        "about": "A Badminton Racket is a piece of sports equipment that has a handled frame with an open hoop with a network of strings stretched tightly.\r\n",
+        "supplier": "Sabbir Mahmud"
     },
     {
         "_id": "04",
@@ -29,7 +32,8 @@
         "name": "Cricket Ball",
         "price": "$(90-150)",
         "quantity": "1200",
-        "about": "A cricket ball is made from layers of twine wound around a cork core, inside a red leather shell.\r\n"
+        "about": "A cricket ball is made from layers of twine wound around a cork core, inside a red leather shell.\r\n",
+        "supplier": "Moniruzzaman"
     },
     {
         "_id": "05",
@@ -37,7 +41,8 @@
         "name": "Football(Soccer ball)",
         "price": "$(90-150)",
         "quantity": "680",
-        "about": "The ball is round, covered with leather or some other suitable material, and inflated.\r\n"
+        "about": "The ball is round, covered with leather or some other suitable material, and inflated.\r\n",
+        "supplier": "MD Safayat"
     },
     {
         "_id": "06",
@@ -45,7 +50,8 @@
         "name": "Basketball",
         "price": "$(90-150)",
         "quantity": "600",
-        "about": "Basketball is a game played between two teams of five players each on a rectangular court, usually indoors.\r\n"
+        "about": "Basketball is a game played between two teams of five players each on a rectangular court, usually indoors.\r\n",
+        "supplier": "MD Parvez Hasan"
     },
     {
         "_id": "07",
@@ -53,7 +59,8 @@
         "name": "Volleyball",
         "price": "$(90-150)",
         "quantity": "550",
-        "about": "Volleyball is one of the game that most of us played during childhood with our friends, as you do not require a lot of equipment to play the game.  \r\n"
+        "about": "Volleyball is one of the game that most of us played during childhood with our friends, as you do not require a lot of equipment to play the game.  \r\n",
+        "supplier": "MD Parvez Hasan"
     },
     {
         "_id": "08",
@@ -61,7 +68,8 @@
         "name": "Boxing Gloves",
         "price": "$(90-150)",
         "quantity": "470",
-        "about": "Boxing gloves are cushioned gloves that fighters wear on their hands during boxing matches and practices.\r\n"
+        "about": "Boxing gloves are cushioned gloves that fighters wear on their hands during boxing matches and practices.\r\n",
+        "supplier": "Sabbir Mahmud"
     },
     {
         "_id": "09",
@@ -69,7 +77,8 @@
         "name": "Cricket Kits",
         "price": "$(90-150)",
         "quantity": "800",
-        "about": "Most of the cricket kits available online consist of good-quality cricket bats, stumps, bails, batting pads, batting gloves, thigh guards, abdominal guards, and more.\r\n"
+        "about": "Most of the cricket kits available online consist of good-quality cricket bats, stumps, bails, batting pads, batting gloves, thigh guards, abdominal guards, and more.\r\n",
+        "supplier": "Moniruzzaman"
     },
     {
         "_id": "10",
@@ -77,7 +86,8 @@
         "name": "Football Truf",
         "price": "$(90-150)",
         "quantity": "520",
-        "about": "Artificial turf is a surface of synthetic fibers made to look like natural grass. It is most often used in arenas for sports that were originally or are normally played on grass.\r\n"
+        "about": "Artificial turf is a surface of synthetic fibers made to look like natural grass. It is most often used in arenas for sports that were originally or are normally played on grass.\r\n",
+        "supplier": "MD Safayat"
     },
     {
         "_id": "11",
@@ -85,7 +95,8 @@
         "name": "Football Gear bag",
         "price": "$(90-150)",
         "quantity": "740",
-        "about": "In association football, kit is the standard equipment and attire worn by players. \r\n"
+        "about": "In association football, kit is the standard equipment and attire worn by players. \r\n",
+        "supplier": "MD Safayat"
     },
     {
         "_id": "12",
@@ -93,7 +104,8 @@
         "name": "Sports Net",
         "price": "$(90-150)",
         "quantity": "600",
-        "about": "In tennis and other racquet sports such as badminton, sports net is use to separate the court into two distinct zones.\r\n"
+        "about": "In tennis and other racquet sports such as badminton, sports net is use to separate the court into two distinct zones.\r\n",
+        "supplier": "Sourav Arefin"
     },
     {
         "_id": "13",
@@ -101,7 +113,8 @@
         "name": "Table Tennis",
         "price": "$(90-150)",
         "quantity": "400",
-        "about": "table tennis, also called (trademark) Ping-Pong, ball game similar in principle to lawn tennis and played on a flat table divided into two equal courts by a net fixed across its width at the middle.\r\n"
+        "about": "table tennis, also called (trademark) Ping-Pong, ball game similar in principle to lawn tennis and played on a flat table divided into two equal courts by a net fixed across its width at the middle.\r\n",
+        "supplier": "Sabbir Mahmud"
     },
     {
         "_id": "14",
@@ -109,7 +122,8 @@
         "name": "Pool Game(cue sports)",
         "price": "$(90-150)",
         "quantity": "320",
-        "about": "Cue sports also known as billiard sports,are a wide variety of games of skill generally played with a cue stick.\r\n"
+        "about": "Cue sports also known as billiard sports,are a wide variety of games of skill generally played with a cue stick.\r\n",
+        "supplier": "MD Parvez Hasan"
     },
     {
         "_id": "15",
@@ -117,7 +131,8 @@
         "name": "Skateboarding",
         "price": "$(90-150)",
         "quantity": "700",
-        "about": "skateboarding, form of recreation and sport, popular among youths, in which a person rides standing balanced on a small board mounted on wheels.\r\n"
+        "about": "skateboarding, form of recreation and sport, popular among youths, in which a person rides standing balanced on a small board mounted on wheels.\r\n",
+        "supplier": "Sourav Arefin"
     },
     {
         "_id": "16",
@@ -125,7 +140,8 @@
         "name": "Carrom board",
         "price": "$(90-150)",
         "quantity": "610",
-        "about": "A Carrom board is a square smooth flat wooden board that can be 72cm or 74cm square and which should be positioned 60 - 70cm above the ground.\r\n"
+        "about": "A Carrom board is a square smooth flat wooden board that can be 72cm or 74cm square and which should be positioned 60 - 70cm above the ground.\r\n",
+        "supplier": "MD Parvez Hasan"
     },
     {
         "_id": "17",
@@ -133,15 +149,17 @@
         "name": "Soccer cleats",
         "price": "$(90-150)",
         "quantity": "1720",
-        "about": "Soccer cleats allow players to grip the ground and move in agile ways while protecting their bodies, especially their feet, from injury.\r\n"
+        "about": "Soccer cleats allow players to grip the ground and move in agile ways while protecting their bodies, especially their feet, from injury.\r\n",
+        "supplier": "MD Safayat"
     },
     {
         "_id": "18",
         "image": "https://media.gq.com/photos/55828e741177d66d68d5374e/4:3/w_572,h_429,c_limit/blogs-the-feed-assets_c-2015-03-fitness-how-to-buy-running-shoes-thumb-624x431-287576.jpg",
-        "name": "Sports Shoe",
+        "name": "Sports Shoes",
         "price": "$(90-150)",
         "quantity": "2200",
-        "about": "Athletic footwear is easy to forget that sport shoes were initially designed for a specific purpose-for functionality, comfort, and to maximize athletic performance.\r\n"
+        "about": "Athletic footwear is easy to forget that sport shoes were initially designed for a specific purpose-for functionality, comfort, and to maximize athletic performance.\r\n",
+        "supplier": "Moniruzzaman"
     },
     {
         "_id": "19",
@@ -149,7 +167,8 @@
         "name": "Goalkeeper gloves",
         "price": "$(90-150)",
         "quantity": "620",
-        "about": "Goalkeeping gloves should be worn slightly larger than hand size. The gap between your fingers and the top of the glove should be no less than a ¼ inch, with ideal ½ inch being the ideal space.\r\n"
+        "about": "Goalkeeping gloves should be worn slightly larger than hand size. The gap between your fingers and the top of the glove should be no less than a ¼ inch, with ideal ½ inch being the ideal space.\r\n",
+        "supplier": "MD Safayat"
     },
     {
         "_id": "20",
@@ -157,7 +176,8 @@
         "name": "Wicketkeeper gloves",
         "price": "$(90-150)",
         "quantity": "720",
-        "about": "Good quality wicket keeping gloves can ensure that you take that crucial catch easily and can also prevent your fingers  from a casual or severe injury during the game.\r\n"
+        "about": "Good quality wicket keeping gloves can ensure that you take that crucial catch easily and can also prevent your fingers  from a casual or severe injury during the game.\r\n",
+        "supplier": "Moniruzzaman"
     },
     {
         "_id": "21",
@@ -165,7 +185,8 @@
         "name": "Sports Trousers",
         "price": "$(90-150)",
         "quantity": "2050",
-        "about": "Trousers, also spelled trowsers, also called pants or slacks, an outer garment covering the lower half of the body from the waist to the ankles and divided into sections to cover each leg separately.\r\n"
+        "about": "Trousers, also spelled trowsers, also called pants or slacks, an outer garment covering the lower half of the body from the waist to the ankles and divided into sections to cover each leg separately.\r\n",
+        "supplier": "Sourav Arefin"
     },
     {
         "_id": "22",
@@ -173,6 +194,7 @@
         "name": "Sports Tracksuit",
         "price": "$(90-150)",
         "quantity": "450",
-        "about": "A tracksuit is an article of clothing consisting of two parts: trousers and a jacket usually with front zipper.\r\n"
+        "about": "A tracksuit is an article of clothing consisting of two parts: trousers and a jacket usually with front zipper.\r\n",
+        "supplier": "Sourav Arefin"
     }
 ]

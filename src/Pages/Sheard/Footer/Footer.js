@@ -10,10 +10,10 @@ const Footer = () => {
     return (
         <section className='footer'>
             <div className='social'>
-                <a href="https://www.facebook.com/"><FaFacebookF /></a>
-                <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
-                <a href="https://www.instagram.com/"><FaInstagram /> </a>
-                <a href="https://github.com/"><FaGithub /></a>
+                <a href="https://www.facebook.com/profile.php?id=100010318328703"><FaFacebookF /></a>
+                <a href="https://www.linkedin.com/in/md-nur-hossain-shanto-983904229/"><FaLinkedinIn /></a>
+                <a href="https://www.instagram.com/_nur_hossain_00/"><FaInstagram /> </a>
+                <a href="https://github.com/NhShanto01"><FaGithub /></a>
             </div>
 
             <ul className='list'>
@@ -21,7 +21,7 @@ const Footer = () => {
                     <Link to="home">Home</Link>
                 </li>
                 <li>
-                    <Link to="product">Products</Link>
+                    <Link to="products">Products</Link>
                 </li>
                 <li>
                     <Link to="blog">Blogs</Link>

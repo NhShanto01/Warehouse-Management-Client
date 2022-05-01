@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -58,10 +60,10 @@ const SignIn = () => {
         if (email) {
             await
                 sendPasswordResetEmail(email);
-            alert('sent email');
+            toast.success('sent email');
         }
         else {
-            alert('Please Fill up your email field')
+            toast.warn('Please Fill up your email field')
         }
     }
 

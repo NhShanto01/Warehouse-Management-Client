@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -35,7 +36,7 @@ const SignUp = () => {
 
         updateProfile({ displayName: name });
 
-        alert('update your Profile')
+        toast.success('update your Profile')
     }
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
-const Product = ({ products }) => {
+const ManageInventory = ({ products }) => {
     const { name, image, price, quantity, about, supplier } = products;
     return (
         <div className='container g-2 col-sm-12 col-md-6 col-lg-4'>
@@ -15,13 +15,10 @@ const Product = ({ products }) => {
                         <u>Description</u> : {about}
                     </Card.Text>
                     <h5>Supplier: {supplier}</h5>
-                    <Button
-                        className='text-light fw-bold'
-                        variant="info">Update</Button>
                 </Card.Body>
             </Card>
         </div>
     );
 };
 
-export default Product;
+export default ManageInventory;

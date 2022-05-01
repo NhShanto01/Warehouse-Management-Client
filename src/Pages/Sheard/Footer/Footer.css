@@ -42,7 +42,9 @@
 
 .footer .social a:hover {
     opacity: 0.9;
-    color: #17c9eccc;
+    background-color: #00d5ffcc;
+    color: #111;
+    border: #111;
 }
 
 .footer ul {
