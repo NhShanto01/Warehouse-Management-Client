@@ -3,6 +3,7 @@ import { Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignIn = () => {
     const emailUseRef = useRef('');
@@ -81,12 +82,12 @@ const SignIn = () => {
                     <button className='btn btn-dark'>SignIn</button>
                 </Form>
                 {errorTextElement}
-                <p className='text-start'>New to Sports Zone ? <Link to="/signup" className='pe-auto text-decoration-none' onClick={navigateToSignup}>Please Register</Link> </p>
+                <p className='text-start'>New to Sports Zone ? <Link to="/signup" className='text-info pe-auto text-decoration-none' onClick={navigateToSignup}>Please Sign Up</Link> </p>
 
 
-                <p className='text-start'>Forget Password? <button className='btn btn-link pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
-                {/* <SocialLogin></SocialLogin>
-                <ToastContainer /> */}
+                <p className='text-start'>Forget Password? <button className='btn btn-link text-info pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+                <SocialLogin></SocialLogin>
+                {/* <ToastContainer /> */}
             </div>
         </section>
     );

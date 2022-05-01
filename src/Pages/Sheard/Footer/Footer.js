@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 
@@ -9,27 +10,27 @@ const Footer = () => {
     return (
         <section className='footer'>
             <div className='social'>
-                <a href="#"><FaFacebookF /></a>
-                <a href="#"><FaLinkedinIn /></a>
-                <a href="#"><FaInstagram /> </a>
-                <a href="#"><FaGithub /></a>
+                <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
+                <a href="https://www.instagram.com/"><FaInstagram /> </a>
+                <a href="https://github.com/"><FaGithub /></a>
             </div>
 
             <ul className='list'>
                 <li>
-                    <a href="#">Home</a>
+                    <Link to="home">Home</Link>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <Link to="product">Products</Link>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <Link to="blog">Blogs</Link>
                 </li>
                 <li>
-                    <a href="#">Terms</a>
+                    <Link to="about">About</Link>
                 </li>
                 <li>
-                    <a href="#">Privacy Policy</a>
+                    <Link to="home">Privacy Policy</Link>
                 </li>
             </ul>
             <p className='copyright'><small>&copy; Copyright {year} - <span className='text-info'><b>Sports Zone </b></span>. All Rights Reserved</small></p>
