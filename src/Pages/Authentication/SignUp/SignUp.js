@@ -41,7 +41,7 @@ const SignUp = () => {
     return (
         <section>
             <div className='container w-50'>
-                <h2 className='mt-4'>Please Login</h2>
+                <h2 className='mt-4'>Please SignUp</h2>
                 <Form onSubmit={handleForSignUp} className='text-start mt-4'>
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">

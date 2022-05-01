@@ -9,7 +9,7 @@
     },
     {
         "_id": "02",
-        "image": "https://pbs.twimg.com/media/DLpRxNgWsAAT_B1.jpg",
+        "image": "https://i.ibb.co/jTM97pL/jursey-c-1.jpg",
         "name": "Jursey",
         "price": "$(90-150)",
         "quantity": "2300",
@@ -17,7 +17,7 @@
     },
     {
         "_id": "03",
-        "image": "https://images.pexels.com/photos/8007176/pexels-photo-8007176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image": "https://i.ibb.co/NV2bXvL/badminton-racket.jpg",
         "name": "Badminton Racket",
         "price": "$(90-150)",
         "quantity": "820",
@@ -33,15 +33,15 @@
     },
     {
         "_id": "05",
-        "image": "https://images.pexels.com/photos/4071522/pexels-photo-4071522.jpeg",
-        "name": "Football(soccer)",
+        "image": "https://i.ibb.co/h1Wsh0q/soccer-ball-c.jpg",
+        "name": "Football(Soccer ball)",
         "price": "$(90-150)",
         "quantity": "680",
         "about": "The ball is round, covered with leather or some other suitable material, and inflated; it must be 27–27.5 inches (68–70 cm) in circumference and 14.5–16 ounces (410–450 grams) in weight.\r\n"
     },
     {
         "_id": "06",
-        "image": "https://images.pexels.com/photos/3001822/pexels-photo-3001822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image": "https://i.ibb.co/PrmXqj1/basket-ball-c.webp",
         "name": "Basketball",
         "price": "$(90-150)",
         "quantity": "600",
