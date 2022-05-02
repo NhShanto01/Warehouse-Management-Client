@@ -6,7 +6,8 @@ const UpdateQuantity = () => {
     return (
         <div>
             <h2>this is UpdateQuantity:{productId}</h2>
-            <Link to="products">Manage Inventory</Link>
+
+            <Link to="/products">Manage Inventory</Link>
         </div>
     );
 };

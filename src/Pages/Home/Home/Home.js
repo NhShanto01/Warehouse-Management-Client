@@ -1,7 +1,7 @@
 import React from 'react';
 import useProducts from '../../../hooks/useProducts';
 import Banner from '../Banner/Banner';
-import Product from '../Product/Product';
+import Product from '../../Products/Product/Product';
 import SectionOne from '../SectionOne/SectionOne';
 import SectionTwo from '../SectionTwo/SectionTwo';
 

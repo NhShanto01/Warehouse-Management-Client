@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { MdUpdate } from "react-icons/md";
 
 const Product = ({ products }) => {
     const navigate = useNavigate();
@@ -24,7 +25,7 @@ const Product = ({ products }) => {
                     <Button
                         onClick={() => navigateToUpdateQuantity(_id)}
                         className='text-light fw-bold'
-                        variant="info">Update</Button>
+                        variant="info">Update <MdUpdate /></Button>
                 </Card.Body>
             </Card>
 

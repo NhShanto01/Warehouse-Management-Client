@@ -55,15 +55,15 @@ const SignIn = () => {
         navigate('/signup');
     }
 
-    const resetPassword = async () => {
+    const resetPassword = () => {
         const email = emailUseRef.current.value;
         if (email) {
-            await
-                sendPasswordResetEmail(email);
+
+            sendPasswordResetEmail(email);
             toast.success('sent email');
         }
         else {
-            toast.warn('Please Fill up your email field')
+            toast.warn('Please Fill up Your Email ')
         }
     }
 

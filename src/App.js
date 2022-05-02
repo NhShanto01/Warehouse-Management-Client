@@ -4,9 +4,10 @@ import './App.css';
 import SignIn from './Pages/Authentication/SignIn/SignIn';
 import SignUp from './Pages/Authentication/SignUp/SignUp';
 import Home from './Pages/Home/Home/Home';
-import Product from './Pages/Home/Product/Product';
-import Products from './Pages/Home/Products/Products';
-import UpdateQuantity from './Pages/Home/UpdateQuantity/UpdateQuantity';
+import ManageQuantity from './Pages/Products/ManageQuantity/ManageQuantity';
+// import Product from './Pages/Products/Product/Product';
+import Products from './Pages/Products/Products/Products';
+import UpdateQuantity from './Pages/Products/UpdateQuantity/UpdateQuantity';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
@@ -22,7 +23,9 @@ function App() {
 
         <Route path='/products' element={<Products></Products>}></Route>
 
-        <Route path='/product/:productId' element={<UpdateQuantity></UpdateQuantity>}></Route>
+        {/* <Route path='/product/:productId' element={<UpdateQuantity></UpdateQuantity>}></Route> */}
+
+        <Route path='/product/:id' element={<ManageQuantity></ManageQuantity>}></Route>
 
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
 

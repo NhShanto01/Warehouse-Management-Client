@@ -15,7 +15,7 @@ const Products = () => {
                     ></ManageInventory>)
                 }
             </div>
-            <button className=' mb-4 btn btn-dark'>Add New Items</button>
+            <button className='d-flex flex-start mb-4 btn btn-dark'>Add New Items</button>
         </div>
     );
 };
