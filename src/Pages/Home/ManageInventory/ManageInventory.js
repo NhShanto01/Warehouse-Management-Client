@@ -5,7 +5,7 @@ const ManageInventory = ({ products }) => {
     const { name, image, price, quantity, about, supplier } = products;
     return (
         <div className='container g-2 col-sm-12 col-md-6 col-lg-4'>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '22rem' }}>
                 <Card.Img className='img-fluid' variant="top" src={image} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
