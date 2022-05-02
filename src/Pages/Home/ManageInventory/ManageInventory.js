@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { AiFillDelete } from "react-icons/ai";
 
 const ManageInventory = ({ products }) => {
     const { name, image, price, quantity, about, supplier } = products;
@@ -15,6 +16,7 @@ const ManageInventory = ({ products }) => {
                         <u>Description</u> : {about}
                     </Card.Text>
                     <h5>Supplier: {supplier}</h5>
+                    <button className='btn btn-danger'>Delete <AiFillDelete /> </button>
                 </Card.Body>
             </Card>
         </div>

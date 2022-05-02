@@ -10,7 +10,7 @@ const Product = ({ products }) => {
         navigate(`/product/${id}`);
     }
     return (
-        <div className='container g-2 col-sm-12 col-md-6 col-lg-4'>
+        <div className='container g-2 col-xs-12 col-md-6 col-lg-4'>
             <Card style={{ width: '20rem' }}>
                 <Card.Img className='img-fluid' variant="top" src={image} />
                 <Card.Body>
@@ -27,6 +27,7 @@ const Product = ({ products }) => {
                         variant="info">Update</Button>
                 </Card.Body>
             </Card>
+
         </div>
     );
 };

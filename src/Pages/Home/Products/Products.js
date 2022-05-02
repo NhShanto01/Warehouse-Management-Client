@@ -1,5 +1,5 @@
 import React from 'react';
-import useProducts from '../../hooks/useProducts';
+import useProducts from '../../../hooks/useProducts';
 import ManageInventory from '../ManageInventory/ManageInventory';
 
 const Products = () => {
@@ -15,6 +15,7 @@ const Products = () => {
                     ></ManageInventory>)
                 }
             </div>
+            <button className=' mb-4 btn btn-dark'>Add New Items</button>
         </div>
     );
 };
