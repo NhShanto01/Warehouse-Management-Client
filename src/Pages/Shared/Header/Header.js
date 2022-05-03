@@ -1,10 +1,11 @@
 import React from 'react';
 import { signOut } from 'firebase/auth';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import './Header.css';
+import CustomLink from '../CustomLink/CustomLink';
+// import './Header.css';
 
 const Header = () => {
     const [user] = useAuthState(auth);
@@ -19,28 +20,28 @@ const Header = () => {
                     <Navbar.Brand as={Link} to="/" className='text-info fs-2 fw-bold'>Sports Zone</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="m-auto nav-text">
-                            <NavLink className='' to="home">Home</NavLink>
-                            <NavLink to="blog">Blogs</NavLink>
-                            <NavLink to="about">About</NavLink>
+                        <Nav className="m-auto">
+                            <Nav.Link as={CustomLink} to="home">Home</Nav.Link>
+                            <Nav.Link as={CustomLink} to="blog">Blogs</Nav.Link>
+                            <Nav.Link as={CustomLink} to="about">About</Nav.Link>
                         </Nav>
                         <Nav>
                             {
                                 user && <>
-                                    <NavLink to="additem">Add Item</NavLink>
-                                    <NavLink to="products">Products</NavLink>
-                                    <NavLink to="myitem">My Item</NavLink>
+                                    <Nav.Link as={CustomLink} to="additem">Add Item</Nav.Link>
+                                    <Nav.Link as={CustomLink} to="products">Manage Products</Nav.Link>
+                                    <Nav.Link as={CustomLink} to="myitem">My Item</Nav.Link>
                                 </>
                             }
                             {
                                 user ?
                                     <button className='btn btn-link text-white text-decoration-none border border-info text-info rounded-pill' onClick={handleSignOut}>sign out</button>
                                     :
-                                    <NavLink
+                                    <Nav.Link
                                         className='border border-info text-info rounded-pill'
                                         as={Link} to="signin">
                                         SignIn
-                                    </NavLink>
+                                    </Nav.Link>
                             }
                         </Nav>
                     </Navbar.Collapse>

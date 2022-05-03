@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignUp = () => {
@@ -24,6 +25,10 @@ const SignUp = () => {
 
     const navigateToSignIn = () => {
         navigate('/signin');
+    }
+
+    if (loading || updating) {
+        return <Loading></Loading>
     }
 
     const handleForSignUp = event => {
@@ -63,7 +68,7 @@ const SignUp = () => {
                 {/* {errorTextElement} */}
                 <p className='mt-3'>Already have an account? <Link to="/signin" className='text-info pe-auto text-decoration-none' onClick={navigateToSignIn}>Please Sign In</Link> </p>
                 <SocialLogin></SocialLogin>
-                {/* <ToastContainer /> */}
+
             </div>
         </section>
     );

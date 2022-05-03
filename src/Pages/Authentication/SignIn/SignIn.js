@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignIn = () => {
@@ -33,7 +34,7 @@ const SignIn = () => {
         errorTextElement = <p className='text-danger'>Error: {error?.message}</p>
     }
     if (loading || sending) {
-        // return <Loading></Loading>
+        return <Loading></Loading>
     }
 
     if (user) {
@@ -89,7 +90,7 @@ const SignIn = () => {
 
                 <p>Forget Password? <button className='btn btn-link text-info pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
                 <SocialLogin></SocialLogin>
-                {/* <ToastContainer /> */}
+
             </div>
         </section>
     );

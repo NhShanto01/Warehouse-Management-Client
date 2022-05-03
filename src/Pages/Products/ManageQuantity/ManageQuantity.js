@@ -6,10 +6,9 @@ import useItemDetail from '../../../hooks/useItemDetail';
 const ManageQuantity = () => {
     const { id } = useParams();
     const [itemDetail, setItemDetail] = useItemDetail(id);
-    // console.log(itemDetail, 'item');
     const [user, setUser] = useState([]);
     const [isReload, setIsReload] = useState(false);
-    // console.log('user', itemDetail.quantity);
+
 
 
     const handleUpdateQuantity = e => {
@@ -65,7 +64,7 @@ const ManageQuantity = () => {
     };
     return (
         <div>
-            <div>
+            <div className='container mt-3 w-50 border border-2 border-info rounded shadow-lg p-3 mb-5 bg-body'>
                 <img src={itemDetail.image} alt="" />
                 <h2>{itemDetail.name}</h2>
                 <p>Price : {itemDetail.price}</p>
@@ -86,8 +85,8 @@ const ManageQuantity = () => {
             </form>
 
             <Link
-                className='my-5 border border-info'
-                to="/products">Manage Inventory</Link>
+                className='mt-4 mb-4 btn btn-info'
+                to="/products">Manage Products</Link>
         </div>
     );
 };
