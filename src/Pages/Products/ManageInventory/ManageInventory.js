@@ -1,9 +1,17 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { AiFillDelete } from "react-icons/ai";
+import { useNavigate } from 'react-router-dom';
+import useProducts from '../../../hooks/useProducts';
 
-const ManageInventory = ({ products }) => {
-    const { name, image, price, quantity, about, supplier } = products;
+const ManageInventory = (props) => {
+    const [products, setProducts] = useProducts();
+    const { _id, name, image, price, quantity, about, supplier } = props.send;
+    // console.log(props.send);
+    const navigate = useNavigate()
+    const handleUpdate = (id) => {
+        navigate(`/product/${id}`)
+    }
     return (
         <div className='container g-2 col-sm-12 col-md-6 col-lg-4'>
             <Card style={{ width: '22rem' }}>
@@ -16,7 +24,13 @@ const ManageInventory = ({ products }) => {
                         <u>Description</u> : {about}
                     </Card.Text>
                     <h5>Supplier: {supplier}</h5>
-                    <button className='btn btn-danger'>Delete <AiFillDelete /> </button>
+                    <button
+                        onClick={() => props.sendEvent(_id)}
+                        className='btn btn-danger'>Delete <AiFillDelete /> </button>
+                    <button
+                        onClick={() => handleUpdate(_id)}
+                        className='btn btn-info'>Update  </button>
+
                 </Card.Body>
             </Card>
         </div>

@@ -1,13 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
+import RequireAuth from './Pages/Authentication/RequireAuth/RequireAuth';
 import SignIn from './Pages/Authentication/SignIn/SignIn';
 import SignUp from './Pages/Authentication/SignUp/SignUp';
+import Blog from './Pages/Blog/Blog';
 import Home from './Pages/Home/Home/Home';
+import AddItems from './Pages/Products/AddItems/AddItems';
+import ManageInventory from './Pages/Products/ManageInventory/ManageInventory';
 import ManageQuantity from './Pages/Products/ManageQuantity/ManageQuantity';
 // import Product from './Pages/Products/Product/Product';
 import Products from './Pages/Products/Products/Products';
-import UpdateQuantity from './Pages/Products/UpdateQuantity/UpdateQuantity';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
@@ -21,11 +24,19 @@ function App() {
 
         <Route path='/home' element={<Home></Home>}></Route>
 
-        <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/products' element={<RequireAuth>
+          <Products></Products>
+        </RequireAuth>}></Route>
 
-        {/* <Route path='/product/:productId' element={<UpdateQuantity></UpdateQuantity>}></Route> */}
+        <Route path='/additem' element={<RequireAuth>
+          <AddItems></AddItems>
+        </RequireAuth>}></Route>
 
-        <Route path='/product/:id' element={<ManageQuantity></ManageQuantity>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
+
+        <Route path='/product/:id' element={<RequireAuth>
+          <ManageQuantity></ManageQuantity>
+        </RequireAuth>}></Route>
 
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
 

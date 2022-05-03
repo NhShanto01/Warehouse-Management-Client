@@ -1,0 +1,12 @@
+.blog {
+    text-align: start;
+    border: 2px solid rgb(0, 209, 236);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.blog:hover {
+    background-color: black;
+    color: rgb(0, 209, 236);
+}

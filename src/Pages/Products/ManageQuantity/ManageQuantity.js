@@ -1,24 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import useItemDetail from '../../../hooks/useItemDetail';
 
 const ManageQuantity = () => {
     const { id } = useParams();
+    const [itemDetail, setItemDetail] = useItemDetail(id);
+    // console.log(itemDetail, 'item');
     const [user, setUser] = useState([]);
     const [isReload, setIsReload] = useState(false);
-    console.log('user', user.quantity);
-    useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
-            .then(res => res.json())
-            .then(data => setUser(data))
+    // console.log('user', itemDetail.quantity);
 
-    }, [isReload]);
 
     const handleUpdateQuantity = e => {
         e.preventDefault();
 
         const quantity = e.target.quantity.value;
-        const newQuantity = parseInt(quantity) + parseInt(user?.quantity);
+        const newQuantity = parseInt(quantity) + parseInt(itemDetail?.quantity);
         const updateQuantity = { newQuantity };
 
         if (!quantity) {
@@ -39,14 +37,14 @@ const ManageQuantity = () => {
                     console.log(data);
                     setIsReload(!isReload);
                     e.target.reset();
-                    toast.success('hello broh')
+                    toast.success('quantity added')
                 });
         }
     };
     const handleDeliveredQuantity = (id) => {
-        // e.preventDefault();
 
-        const quantity = user?.quantity;
+
+        const quantity = itemDetail?.quantity;
         const updateQuantity = { quantity };
 
         const url = `http://localhost:5000/delivered/${id}`
@@ -62,20 +60,20 @@ const ManageQuantity = () => {
             .then(data => {
                 console.log(data);
                 setIsReload(!isReload);
-
+                toast.success('quantity delivered')
             });
     };
     return (
         <div>
             <div>
-                <img src={user.image} alt="" />
-                <h2>{user.name}</h2>
-                <p>Price : {user.price}</p>
-                <p><b>Quantity : {user.quantity}</b></p>
-                <p><small>Description : {user.about}</small></p>
-                <h4>Supplier : {user.supplier}</h4>
+                <img src={itemDetail.image} alt="" />
+                <h2>{itemDetail.name}</h2>
+                <p>Price : {itemDetail.price}</p>
+                <p><b>Quantity : {itemDetail.quantity}</b></p>
+                <p><small>Description : {itemDetail.about}</small></p>
+                <h4>Supplier : {itemDetail.supplier}</h4>
                 <button
-                    onClick={() => handleDeliveredQuantity(user._id)}
+                    onClick={() => handleDeliveredQuantity(itemDetail._id)}
                     className='btn btn-danger'
                 > Delivered </button>
             </div>
@@ -86,6 +84,10 @@ const ManageQuantity = () => {
                     placeholder='Add Quantity' />
 
             </form>
+
+            <Link
+                className='my-5 border border-info'
+                to="/products">Manage Inventory</Link>
         </div>
     );
 };
