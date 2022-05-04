@@ -6,6 +6,7 @@ import SectionOne from '../SectionOne/SectionOne';
 import SectionTwo from '../SectionTwo/SectionTwo';
 import ManageInventory from '../../Products/ManageInventory/ManageInventory';
 import { Link } from 'react-router-dom';
+import PageName from '../../Shared/PageName/PageName';
 
 const Home = () => {
     const [products, setProducts] = useProducts();
@@ -13,7 +14,8 @@ const Home = () => {
     const showProductItem = products.slice(0, 6);
 
     return (
-        <div>
+        <>
+            <PageName title="Home"></PageName>
             <Banner></Banner>
             <SectionOne></SectionOne>
             <h2>Featured Products</h2>
@@ -28,7 +30,7 @@ const Home = () => {
             </div>
             <Link to="/products" className='mt-4 btn btn-dark text-info'> See More</Link>
             <SectionTwo></SectionTwo>
-        </div>
+        </>
     );
 };
 

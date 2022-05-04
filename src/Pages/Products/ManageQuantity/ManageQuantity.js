@@ -63,7 +63,7 @@ const ManageQuantity = () => {
     return (
         <div>
             <div className='container mt-3 w-50 border border-2 border-info rounded shadow-lg p-3 mb-5 bg-body'>
-                <img src={itemDetail.image} alt="" />
+                <img className='img-fluid' src={itemDetail.image} alt="" />
                 <h2>{itemDetail.name}</h2>
                 <p>Price : {itemDetail.price}</p>
                 <p><b>Quantity : {itemDetail.quantity}</b></p>
@@ -83,7 +83,7 @@ const ManageQuantity = () => {
             </form>
 
             <Link
-                className='mt-4 mb-4 btn btn-info'
+                className='mt-4 mb-4 btn btn-dark text-info'
                 to="/products">Manage Products</Link>
         </div>
     );

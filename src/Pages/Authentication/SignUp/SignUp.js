@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import useToken from '../../../hooks/useToken';
 import Loading from '../../Shared/Loading/Loading';
+import PageName from '../../Shared/PageName/PageName';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignUp = () => {
@@ -58,6 +59,7 @@ const SignUp = () => {
     return (
         <section>
             <div className='container mt-3 w-50 border border-2 border-info rounded shadow-lg p-3 mb-5 bg-body'>
+                <PageName title="Sign Up"></PageName>
                 <h2 className='mt-4'>Please SignUp</h2>
                 <Form onSubmit={handleForSignUp} className='text-start mt-4'>
 

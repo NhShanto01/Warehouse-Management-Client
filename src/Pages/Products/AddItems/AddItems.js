@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
+import PageName from '../../Shared/PageName/PageName';
 
 const AddItems = () => {
     const [items, setItems] = useState([]);
@@ -34,6 +35,7 @@ const AddItems = () => {
 
     return (
         <div className='container'>
+            <PageName title="Add-Item"></PageName>
             <h2>Please Add an Item </h2>
             <form onSubmit={handleAddItem} className='border border-dark p-4 mt-4 mb-4 row w-50 mx-auto'>
                 <input

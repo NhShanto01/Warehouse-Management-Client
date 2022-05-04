@@ -1,9 +1,11 @@
 import React from 'react';
+import PageName from '../Shared/PageName/PageName';
 import './Blog.css';
 
 const Blog = () => {
     return (
         <div className='container'>
+            <PageName title="Blog"></PageName>
             <h1>Blog Collection</h1>
             <div className='blog'>
                 <h3>Q.1 : What is the difference between SQL and NoSQL ?</h3>

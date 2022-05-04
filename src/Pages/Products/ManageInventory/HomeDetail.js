@@ -22,6 +22,7 @@ const HomeDetail = () => {
                 })
         }
     }
+
     return (
         <div className='container gx-3 row'>
             {
