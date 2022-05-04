@@ -5,7 +5,7 @@ import ManageInventory from '../ManageInventory/ManageInventory';
 
 const Products = () => {
     const [products, setProducts] = useProducts();
-    // console.log(products);
+
     return (
         <div>
             <h2 className='my-5'>Manage Inventory</h2>
@@ -17,7 +17,7 @@ const Products = () => {
                     ></ManageInventory>)
                 }
             </div>
-            <Link to="/additem" className='btn btn-info'> Add New Item</Link>
+            <Link to="/additem" className=' mb-4 btn btn-dark text-info'> Add New Item</Link>
         </div>
     );
 };

@@ -8,7 +8,7 @@ const useItemDetail = (id) => {
             .then(res => res.json())
             .then(data => setItemDetail(data))
 
-    }, [id]);
+    }, [itemDetail]);
     return [itemDetail]
 };
 

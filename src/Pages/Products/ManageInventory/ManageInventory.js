@@ -10,6 +10,24 @@ const ManageInventory = (props) => {
     const [products, setProducts] = useProducts();
     const { _id, name, image, price, quantity, about, supplier } = props.send;
 
+
+    const handleDeleteBtn = id => {
+
+        const proceed = window.confirm('Are You Sure For This?');
+        if (proceed) {
+            const url = `http://localhost:5000/product/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remainingItems = [...products, data];
+                    setProducts(remainingItems);
+                })
+        }
+    }
+
     const navigate = useNavigate()
     const handleUpdate = (id) => {
         navigate(`/product/${id}`)
@@ -27,11 +45,8 @@ const ManageInventory = (props) => {
                     </Card.Text>
                     <h5>Supplier: {supplier}</h5>
                     <button
-                        onClick={() => props.sendEvent(_id)}
+                        onClick={() => handleDeleteBtn(_id)}
                         className='btn btn-danger me-3'>Delete <AiFillDelete /> </button>
-                    <button
-                        onClick={() => handleUpdate(_id)}
-                        className='btn btn-info text-light'>Update <MdUpdate /> </button>
 
                 </Card.Body>
             </Card>

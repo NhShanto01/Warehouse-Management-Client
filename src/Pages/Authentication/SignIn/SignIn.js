@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
+import useToken from '../../../hooks/useToken';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -23,6 +24,10 @@ const SignIn = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    // using jwt token by useToken hook
+
+    const [token] = useToken(user);
+
     // Implement Password reset email .
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
@@ -37,7 +42,7 @@ const SignIn = () => {
         return <Loading></Loading>
     }
 
-    if (user) {
+    if (token) {
         navigate(from, { replace: true });
     }
 

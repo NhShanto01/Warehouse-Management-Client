@@ -6,9 +6,7 @@ import useItemDetail from '../../../hooks/useItemDetail';
 const ManageQuantity = () => {
     const { id } = useParams();
     const [itemDetail, setItemDetail] = useItemDetail(id);
-    const [user, setUser] = useState([]);
     const [isReload, setIsReload] = useState(false);
-
 
 
     const handleUpdateQuantity = e => {

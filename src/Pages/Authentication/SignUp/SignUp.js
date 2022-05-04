@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
+import useToken from '../../../hooks/useToken';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -23,12 +24,20 @@ const SignUp = () => {
 
     const navigate = useNavigate();
 
+    // using jwt token by useToken hook
+
+    const [token] = useToken(user);
+
     const navigateToSignIn = () => {
         navigate('/signin');
     }
 
     if (loading || updating) {
         return <Loading></Loading>
+    }
+
+    if (token) {
+        navigate('/home');
     }
 
     const handleForSignUp = event => {

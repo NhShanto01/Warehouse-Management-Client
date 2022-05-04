@@ -12,21 +12,6 @@ const Home = () => {
 
     const showProductItem = products.slice(0, 6);
 
-    const handleDeleteBtn = id => {
-        const proceed = window.confirm('Are You Sure For This?');
-        if (proceed) {
-            const url = ``;
-            fetch(url, {
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data);
-                    const remainingItems = products.filter(product => product._id !== id);
-                    setProducts(remainingItems);
-                })
-        }
-    }
     return (
         <div>
             <Banner></Banner>
@@ -34,14 +19,14 @@ const Home = () => {
             <h2>Featured Products</h2>
             <div className='row container mx-auto'>
                 {
-                    showProductItem.map(products => <ManageInventory
+                    showProductItem.map(products => <Product
                         key={products._id}
-                        send={products}
-                        sendEvent={handleDeleteBtn}
-                    ></ManageInventory>)
+                        products={products}
+
+                    ></Product>)
                 }
             </div>
-            <Link to="/products" className='btn btn-info text-light'> See More</Link>
+            <Link to="/products" className='mt-4 btn btn-dark text-info'> See More</Link>
             <SectionTwo></SectionTwo>
         </div>
     );

@@ -7,7 +7,7 @@ import SignUp from './Pages/Authentication/SignUp/SignUp';
 import Blog from './Pages/Blog/Blog';
 import Home from './Pages/Home/Home/Home';
 import AddItems from './Pages/Products/AddItems/AddItems';
-import ManageInventory from './Pages/Products/ManageInventory/ManageInventory';
+// import ManageInventory from './Pages/Products/ManageInventory/ManageInventory';
 import ManageQuantity from './Pages/Products/ManageQuantity/ManageQuantity';
 // import Product from './Pages/Products/Product/Product';
 import Products from './Pages/Products/Products/Products';

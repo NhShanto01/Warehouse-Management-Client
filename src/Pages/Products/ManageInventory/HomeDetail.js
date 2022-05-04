@@ -4,9 +4,10 @@ import ManageInventory from './ManageInventory';
 
 const HomeDetail = () => {
     const [products, setProducts] = useProducts();
-    // console.log(products, 'this is product');
+
 
     const handleDeleteBtn = id => {
+
         const proceed = window.confirm('Are You Sure For This?');
         if (proceed) {
             const url = `http://localhost:5000/product/${id}`;
@@ -16,7 +17,7 @@ const HomeDetail = () => {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
-                    const remainingItems = products.filter(product => product._id !== id);
+                    const remainingItems = [...products, data];
                     setProducts(remainingItems);
                 })
         }
