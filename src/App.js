@@ -5,6 +5,7 @@ import RequireAuth from './Pages/Authentication/RequireAuth/RequireAuth';
 import SignIn from './Pages/Authentication/SignIn/SignIn';
 import SignUp from './Pages/Authentication/SignUp/SignUp';
 import Blog from './Pages/Blog/Blog';
+import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home/Home';
 import AddItems from './Pages/Products/AddItems/AddItems';
 // import ManageInventory from './Pages/Products/ManageInventory/ManageInventory';
@@ -33,6 +34,8 @@ function App() {
         </RequireAuth>}></Route>
 
         <Route path='/blog' element={<Blog></Blog>}></Route>
+
+        <Route path='/contact' element={<Contact></Contact>}></Route>
 
         <Route path='/product/:id' element={<RequireAuth>
           <ManageQuantity></ManageQuantity>

@@ -18,7 +18,8 @@ const Home = () => {
             <PageName title="Home"></PageName>
             <Banner></Banner>
             <SectionOne></SectionOne>
-            <h2>Featured Products</h2>
+            <p className='fs-3'>Our</p>
+            <h2 className='mb-4'>Featured Products</h2>
             <div className='row container mx-auto'>
                 {
                     showProductItem.map(products => <Product
