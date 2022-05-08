@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { AiFillDelete } from "react-icons/ai";
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import PageName from '../../Shared/PageName/PageName';
 
 
@@ -9,13 +9,13 @@ const ManageInventory = (props) => {
 
     const { _id, name, image, price, quantity, about, supplier } = props.send;
     const handleDeleteBtn = props.handleDeleteBtn;
-    console.log(props.description);
 
 
-    // const navigate = useNavigate()
-    // const handleUpdate = (id) => {
-    //     navigate(`/product/${id}`)
-    // }
+
+    const navigate = useNavigate()
+    const handleUpdate = (id) => {
+        navigate(`/product/${id}`)
+    }
 
     return (
         <div className='container g-2 col-sm-12 col-md-6 col-lg-4'>
@@ -33,6 +33,9 @@ const ManageInventory = (props) => {
                     <button
                         onClick={() => handleDeleteBtn(_id)}
                         className='btn btn-danger me-3'>Delete <AiFillDelete /> </button>
+                    <button
+                        onClick={() => handleUpdate(_id)}
+                        className='btn btn-danger me-3'>Update <AiFillDelete /> </button>
 
                 </Card.Body>
             </Card>

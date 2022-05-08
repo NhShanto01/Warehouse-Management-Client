@@ -7,7 +7,7 @@ const Products = () => {
     const [products, setProducts] = useProducts();
 
     const handleDeleteBtn = id => {
-        console.log('object', id);
+
         const proceed = window.confirm('Are You Sure For This?');
         if (proceed) {
             const url = `http://localhost:5000/product/${id}`;

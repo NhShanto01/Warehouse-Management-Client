@@ -10,6 +10,7 @@ import Home from './Pages/Home/Home/Home';
 import AddItems from './Pages/Products/AddItems/AddItems';
 // import ManageInventory from './Pages/Products/ManageInventory/ManageInventory';
 import ManageQuantity from './Pages/Products/ManageQuantity/ManageQuantity';
+import MyItem from './Pages/Products/MyItem/MyItem';
 // import Product from './Pages/Products/Product/Product';
 import Products from './Pages/Products/Products/Products';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -36,6 +37,10 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
 
         <Route path='/contact' element={<Contact></Contact>}></Route>
+
+        <Route path='/myitem' element={<RequireAuth>
+          <MyItem></MyItem>
+        </RequireAuth>}></Route>
 
         <Route path='/product/:id' element={<RequireAuth>
           <ManageQuantity></ManageQuantity>

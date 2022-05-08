@@ -9,12 +9,13 @@ const AddItems = () => {
         event.preventDefault();
 
         const name = event.target.name.value;
+        const email = event.target.email.value;
         const about = event.target.about.value;
         const price = event.target.price.value;
         const quantity = event.target.quantity.value;
         const image = event.target.image.value;
         const supplier = event.target.supplier.value;
-        const newItem = { name, about, price, quantity, image, supplier };
+        const newItem = { name, email, about, price, quantity, image, supplier };
         console.log(newItem);
 
         // POST
@@ -40,6 +41,10 @@ const AddItems = () => {
             <PageName title="Add-Item"></PageName>
             <h2>Please Add an Item </h2>
             <form onSubmit={handleAddItem} className='border border-dark p-4 mt-4 mb-4 row w-50 mx-auto'>
+                <input
+                    className='mb-3'
+                    type="email" name="email" placeholder='Your Email' required />
+
                 <input
                     className='mb-3'
                     type="text" name="name" placeholder='Product Name' autoComplete='off' required />
