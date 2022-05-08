@@ -75,9 +75,9 @@ const ManageQuantity = () => {
                 > Delivered </button>
             </div>
             <form onSubmit={handleUpdateQuantity}>
-                <input type="text" name='quantity' placeholder='Quantity' />
+                <input type="text" name='quantity' placeholder='Quantity' /> <br />
 
-                <input type="submit" value="Quantity"
+                <input className=' mt-2 btn btn-primary' type="submit" value="Quantity"
                     placeholder='Add Quantity' />
 
             </form>

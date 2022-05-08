@@ -1,37 +1,22 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { AiFillDelete } from "react-icons/ai";
-import { useNavigate } from 'react-router-dom';
-import useProducts from '../../../hooks/useProducts';
+// import { useNavigate } from 'react-router-dom';
 import PageName from '../../Shared/PageName/PageName';
 
 
 const ManageInventory = (props) => {
-    const [products, setProducts] = useProducts();
+
     const { _id, name, image, price, quantity, about, supplier } = props.send;
+    const handleDeleteBtn = props.handleDeleteBtn;
+    console.log(props.description);
 
 
-    const handleDeleteBtn = id => {
-        console.log('object', id);
-        const proceed = window.confirm('Are You Sure For This?');
-        if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
-            fetch(url, {
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data);
-                    const remainingItems = [...products, data];
-                    setProducts(remainingItems);
-                })
-        }
-    }
+    // const navigate = useNavigate()
+    // const handleUpdate = (id) => {
+    //     navigate(`/product/${id}`)
+    // }
 
-    const navigate = useNavigate()
-    const handleUpdate = (id) => {
-        navigate(`/product/${id}`)
-    }
     return (
         <div className='container g-2 col-sm-12 col-md-6 col-lg-4'>
             <PageName title="Products"></PageName>
@@ -53,6 +38,7 @@ const ManageInventory = (props) => {
             </Card>
         </div>
     );
+
 };
 
 export default ManageInventory;

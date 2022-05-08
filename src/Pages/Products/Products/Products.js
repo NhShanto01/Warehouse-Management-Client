@@ -6,6 +6,22 @@ import ManageInventory from '../ManageInventory/ManageInventory';
 const Products = () => {
     const [products, setProducts] = useProducts();
 
+    const handleDeleteBtn = id => {
+        console.log('object', id);
+        const proceed = window.confirm('Are You Sure For This?');
+        if (proceed) {
+            const url = `http://localhost:5000/product/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                })
+            setProducts(products.filter(product => product._id !== id));
+        }
+    };
+
     return (
         <div>
             <h2 className='my-5'>Manage Inventory</h2>
@@ -14,6 +30,7 @@ const Products = () => {
                     products.map(products => <ManageInventory
                         key={products._id}
                         send={products}
+                        handleDeleteBtn={handleDeleteBtn}
                     ></ManageInventory>)
                 }
             </div>

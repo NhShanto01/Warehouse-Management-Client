@@ -4,16 +4,18 @@ import PageName from '../../Shared/PageName/PageName';
 
 const AddItems = () => {
     const [items, setItems] = useState([]);
+
     const handleAddItem = event => {
         event.preventDefault();
 
         const name = event.target.name.value;
-        const description = event.target.description.value;
+        const about = event.target.about.value;
         const price = event.target.price.value;
         const quantity = event.target.quantity.value;
         const image = event.target.image.value;
         const supplier = event.target.supplier.value;
-        const user = { name, description, price, quantity, image, supplier };
+        const newItem = { name, about, price, quantity, image, supplier };
+        console.log(newItem);
 
         // POST
 
@@ -22,7 +24,7 @@ const AddItems = () => {
             headers: {
                 'content-type': 'application/json',
             },
-            body: JSON.stringify(user),
+            body: JSON.stringify(newItem),
         })
             .then(res => res.json())
             .then(data => {
@@ -43,7 +45,7 @@ const AddItems = () => {
                     type="text" name="name" placeholder='Product Name' autoComplete='off' required />
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Control as="textarea" name='description' placeholder='Description' rows={3} />
+                    <Form.Control as="textarea" name='about' placeholder='Description' rows={3} />
                 </Form.Group>
 
                 <input
