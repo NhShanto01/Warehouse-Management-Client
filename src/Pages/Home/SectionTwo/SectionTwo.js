@@ -3,7 +3,7 @@ import './SectionTwo.css';
 
 const SectionTwo = () => {
     return (
-        <div className='m-5 container'>
+        <div className='container mt-3'>
             <h1><strong>Our</strong></h1>
             <h2 className='title-supplier'>Most Awaited Suppliers </h2>
             <div>

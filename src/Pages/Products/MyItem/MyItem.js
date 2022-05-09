@@ -1,25 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
+import useProducts from '../../../hooks/useProducts';
 import DisplayOwnItem from '../DisplayOwnItem/DisplayOwnItem';
 
 const MyItem = () => {
     const [user] = useAuthState(auth);
+    const [products, setProducts] = useProducts();
     const [ownItems, setOwnItems] = useState([])
-    const [removes, setRemoves] = useState([]);
+
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://young-retreat-52384.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setOwnItems(data))
 
-    }, []);
+    }, [products, ownItems, user]);
 
     const handleDeleteBtn = id => {
 
         const proceed = window.confirm('Are You Sure For This?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://young-retreat-52384.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -27,8 +30,8 @@ const MyItem = () => {
                 .then(data => {
                     console.log(data);
                 })
-            const remaining = removes.filter(remove => remove._id !== id);
-            setRemoves(remaining);
+            const updateProducts = (products.filter(product => product._id !== id));
+            setProducts(updateProducts);
         }
     };
     const email = user.email;
@@ -40,7 +43,7 @@ const MyItem = () => {
             {
                 rest.map(item => <DisplayOwnItem
                     key={item._id}
-                    send={item}
+                    item={item}
                     handleDeleteBtn={handleDeleteBtn}
                 ></DisplayOwnItem>)
             }

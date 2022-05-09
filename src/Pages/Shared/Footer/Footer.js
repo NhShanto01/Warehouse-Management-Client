@@ -27,13 +27,13 @@ const Footer = () => {
                     <Link to="blog">Blogs</Link>
                 </li>
                 <li>
-                    <Link to="about">About</Link>
+                    <Link to="contact">Contact us</Link>
                 </li>
                 <li>
                     <Link to="home">Privacy Policy</Link>
                 </li>
             </ul>
-            <p className='copyright'><small>&copy; Copyright {year} - <span className='text-info'><b>Sports Zone </b></span>. All Rights Reserved</small></p>
+            <p className='copyright'>&copy; Copyright {year} - <span className='text-info'><b>Sports Zone </b></span>. All Rights Reserved</p>
         </section>
     );
 };

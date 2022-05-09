@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { AiFillDelete } from "react-icons/ai";
+import { MdUpdate } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import PageName from '../../Shared/PageName/PageName';
 
@@ -35,7 +36,7 @@ const ManageInventory = (props) => {
                         className='btn btn-danger me-3'>Delete <AiFillDelete /> </button>
                     <button
                         onClick={() => handleUpdate(_id)}
-                        className='btn btn-danger me-3'>Update <AiFillDelete /> </button>
+                        className='btn btn-info text-light me-3'>Update <MdUpdate /> </button>
 
                 </Card.Body>
             </Card>

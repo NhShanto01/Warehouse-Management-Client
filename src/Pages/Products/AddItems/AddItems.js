@@ -16,11 +16,11 @@ const AddItems = () => {
         const image = event.target.image.value;
         const supplier = event.target.supplier.value;
         const newItem = { name, email, about, price, quantity, image, supplier };
-        console.log(newItem);
+        // console.log(newItem);
 
         // POST
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://young-retreat-52384.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

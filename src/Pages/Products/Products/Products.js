@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useProducts from '../../../hooks/useProducts';
 import ManageInventory from '../ManageInventory/ManageInventory';
+import { MdOutlineAddShoppingCart } from "react-icons/md";
+
 
 const Products = () => {
     const [products, setProducts] = useProducts();
@@ -10,7 +12,7 @@ const Products = () => {
 
         const proceed = window.confirm('Are You Sure For This?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://young-retreat-52384.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -34,7 +36,7 @@ const Products = () => {
                     ></ManageInventory>)
                 }
             </div>
-            <Link to="/additem" className=' mb-4 btn btn-dark text-info'> Add New Item</Link>
+            <Link to="/additem" className=' mb-4 btn btn-dark text-info'> Add New Item <MdOutlineAddShoppingCart /> </Link>
         </div>
     );
 };

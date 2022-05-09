@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import useItemDetail from '../../../hooks/useItemDetail';
+import { AiOutlineDeliveredProcedure } from "react-icons/ai";
+import { MdAdd } from "react-icons/md";
+import { MdDoubleArrow } from "react-icons/md";
+
 
 const ManageQuantity = () => {
     const { id } = useParams();
@@ -20,7 +24,7 @@ const ManageQuantity = () => {
             alert('Please Add Some Quantity')
         }
         else {
-            const url = `http://localhost:5000/product/${id}`
+            const url = `https://young-retreat-52384.herokuapp.com/product/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -44,7 +48,7 @@ const ManageQuantity = () => {
         const quantity = itemDetail?.quantity;
         const updateQuantity = { quantity };
 
-        const url = `http://localhost:5000/delivered/${id}`
+        const url = `https://young-retreat-52384.herokuapp.com/delivered/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -72,19 +76,20 @@ const ManageQuantity = () => {
                 <button
                     onClick={() => handleDeliveredQuantity(itemDetail._id)}
                     className='btn btn-danger'
-                > Delivered </button>
+                > Delivered <AiOutlineDeliveredProcedure /> </button>
             </div>
             <form onSubmit={handleUpdateQuantity}>
-                <input type="text" name='quantity' placeholder='Quantity' /> <br />
+                <input type="text" name='quantity' placeholder='Quantity' autoComplete='off' /> <br />
 
-                <input className=' mt-2 btn btn-primary' type="submit" value="Quantity"
-                    placeholder='Add Quantity' />
+                <button
+                    className='btn btn-primary mt-3'
+                >Add Quantity <MdAdd /></button>
 
             </form>
 
             <Link
                 className='mt-4 mb-4 btn btn-dark text-info'
-                to="/products">Manage Products</Link>
+                to="/products">Manage Products <MdDoubleArrow /> </Link>
         </div>
     );
 };
