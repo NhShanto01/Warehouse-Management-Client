@@ -1,19 +1,27 @@
 # Assignment-11
 
-## This Project was lived as a project name [Sport Zone]( https://sports-zone-8991a.web.app )
+## This Project was lived as a project name [Sports Zone]( https://sports-zone-8991a.web.app/ )
 
 
 ## Describe website 
 
 * This website crete with react app.
 
-* The home page has top nav -bar, static banner, there is a section called Services, which will have web site related services and footer.
+* This website two site : One is the client-site and the other is the server-site for backend.
 
-* A component called check out has been made to purchase the services, where the user can buy them with his details.
+* The home page has top nav -bar, Slider banner, there are three section , which will have web site related products,healthy short article and our most awaited supplier section and footer.
 
-* The checkout page has a protected route, so no strangers can go there.
+* There is a button called Update in the Product section, which can be clicked to increase or decrease the quantity of that product and it is a private route.
 
-* There is a system of login, register, where anyone can log in or register with email, password, Gmail, Facebook, Github, etc
+* there also private route is Manage Products ,Where all the products will beWhere all the products will be. And the user can delete any product if he wants.
+
+* Once the user is logged in here, two extra buttons will appear in the navbar, one of which is add item and the other is my item.
+
+* The work of the add item is to have a form, if you fill in the information and submit it, it will be added to All Products. My item will also be added again. Here the user can delete the product from my item if he wants.
+
+* There are also unprotected like : Blog ,Contact Us.
+
+* There is a system of login, register, where anyone can log in or register with email, password, Gmail.
 
 ## Used Technology
 
